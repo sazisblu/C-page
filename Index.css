@@ -1,0 +1,127 @@
+html
+{
+    font-size: 16px;
+}
+
+*
+{
+ box-sizing:border-box;
+ margin: 0;
+ padding: 0;
+ font-family:dm sans;
+ /* border: 1px red solid;  */
+ }
+
+ body
+ {
+    display: flex;
+    flex-direction: row;
+    
+ }
+ 
+ #navbar
+ {
+    width: 30vw;
+    /* border: 1px red solid; */
+    /* background-color: #EEA47F; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    position: fixed;
+    padding: 20px;
+ }
+
+#navfirsthead
+{
+    /* background-color:#EEA47F ; */
+    /* border: red 1px solid; */
+    /* height: 100px; */
+    /* padding: 0; */
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+ #navfirsthead h1
+ {
+    font-size:2rem;
+    padding-left: 10px;
+    
+ }
+
+ #main-doc
+ {
+    width: 70vw;
+    /* border: 1px blue solid; */
+    /* background-color: #00539C; */
+    height: 100%;
+    padding: 40px;
+    position: relative;
+    left: 30%;
+    border-left: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+ }
+
+#navfirsthead
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#navfirsthead img
+{
+    width: 10%;
+}
+
+code
+{
+    display: block;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    /* border: 0.2px  black solid; */
+    width: 80%;
+    height: 30%;
+    filter: blur(0.5PX);
+    border-radius: 5px;
+    background-color: antiquewhite;    
+    padding: 10px;
+    color: black;
+}
+
+dt
+{
+    display: list-item;
+    list-style: disc;
+    font-weight: bold;
+}
+.syntax
+{
+    font-weight: bold;
+}
+
+#navbar a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    border: 1px red solid;
+    padding: 10px;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+}
+
+.main-section header
+{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+p
+{
+    /* border: 1px red solid; */
+    margin: 10px 0;
+}

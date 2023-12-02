@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=DM+Sans:opsz,wght@9..40,200&family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navbar">
+       <header id="navfirsthead"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png"><h1>C-Language</h1></header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Hello_world">Hello world</a>
+        <a class="nav-link" href="#C_Variables">C Variables</a>
+        <a class="nav-link" href="#Data_Types">Data Types</a>
+        <a class="nav-link" href="#Control_Structures">Control Structures</a>
+        <a class="nav-link" href="#if_else">if else</a>
+        <a class="nav-link" href="#For_Loop">For Loop</a>
+        <a class="nav-link" href="#Function">Function</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <div class="description">
+                <p>C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.
+                It is a very popular language, despite being old. The main reason for its popularity is because it is a fundamental language in the field of computer science.
+                C is strongly associated with UNIX, as it was developed to write the UNIX operating system.</p>
+                <p>C is fairly difficult than languages like Python and Javascript as it more resembles machine level language than human tounge but it is higly regarded as the first language for begineer programmers as it can help in building strong foundation for programming as it teaches the begineers with enough knowledge about the basics of pogramming.Despite the emergence of numerous new languages like Java, Python, JavaScript, and PHP, the popularity of C is not hampered. In fact, these languages have borrowed many of their control structures and other basic features from C. What makes the C language so popular? Why are companies keen on hiring C professionals even today?  The most basic and straightforward answer would be its features make it a unique and special language, thereby still holding its relevance and popularity. </p>
+                <P>Some key feature of C-programming language are as follows:-</P>
+                <ul>
+                    <li>Procedural Language</li>
+                    <li>Modularity</li>
+                    <li>Rich set of built-in Operators</li>
+                    <li>Easy to Extend</li>
+                    <li>Middle-Level Language</li>
+                </ul>
+            </div>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <div class="description">
+                <p>When learning any programming language, the first ever programme to be written is the "hello world programme" as per the programming norms. This is the simplest programme one can learn.  All one needs to do is display the message “Hello World” on the screen. Let’s look at the program and try to understand the terminologies involved in it.</p>
+                <P>The following C program displays “Hello World” in the output.:-
+                    <code>
+                        
+                    // Simple C program to display "Hello World"<br>
+ 
+                    // Header file for input output functions<br>
+                    #include stdio.h <br>
+                     
+                    // main function -<br>
+                    // where the execution of program begins<br>
+                    int main()<br>
+                    {<br>
+                     
+                        // prints hello world<br>
+                        printf("Hello World");<br>
+                     
+                        return 0;<br>
+                    }<br>
+                
+                 </code>
+                </P>            
+                <p>
+                 <b>Output</b><br>
+                 <code>Hello World</code>   
+                </p>
+            </div>
+        </section>
+        <section class="main-section" id="C_Variables">
+            <header>C Variables</header>
+            <div class="description">
+                <p>
+                 A variable in C language is the name associated with some memory location to store data of different types. There are many types of variables in C depending on the scope, storage class, lifetime, type of data they store, etc. A variable is the basic building block of a C program that can be used in expressions as a substitute in place of the value it stores.  
+                </p>
+                <p>In C, there are different types of variables (defined with different keywords), for example:</p>
+                <ul>
+                    <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                    <li>float - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                    <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+                </ul>
+                <b>syntax for declaring variables</b>
+                <code>
+                    type variableName = value;
+                </code>
+                <p>Where type is one of C types (such as int), and variableName is the name of the variable (such as x or myName). The equal sign is used to assign a value to the variable.
+                </p>
+            </div>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <div class="description">
+                <P>
+                    Data types in c refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted.
+                </P>
+                <p>
+                    The various data types can be arranged into various catagories on basis of different criterias.some groups of data types are:-
+                </p>
+                <dl>
+                    <dt>Basic Types</dt>
+                    <dd>They are arithmetic types and are further classified into: (a) integer types and (b) floating-point types.</dd>
+                    <dt>Enumerated types</dt>
+                    <dd>They are again arithmetic types and they are used to define variables that can only assign certain discrete integer values throughout the program.</dd>
+                    <dt>The type void</dt>
+                    <dd>The type specifier void indicates that no value is available.</dd>
+                    <dt>Derived types</dt>
+                    <dd>They include (a) Pointer types, (b) Array types, (c) Structure types, (d) Union types and (e) Function types.</dd>
+                </dl>
+                <p>    
+                We mostly consider the basic types as the primary set of data types available in C. The data types belonging to the Basic types are as follows:-
+                </p>
+                <dl>
+                <dt>int-type</dt>
+                <dd>Integers are whole numbers that can have both zero, positive and negative values but no decimal values. For example, 0, -5, 10
+                 We can use int for declaring an integer variable.
+                <p class="syntax">Syntax to declare int:-</p>
+                 <code>
+                int x;     
+                </code>
+                <p>Here the int type variable named x is being declared.The size of int is usually 4 bytes (32 bits). And, it can take 232 distinct states from -2147483648 to 2147483647.</p> 
+                </dd>
+                <dt>float and double</dt>
+                <dd>
+                    float and double are used to hold real numbers.What's the difference between float and double?
+
+                    The size of float (single precision float data type) is 4 bytes. And the size of double (double precision float data type) is 8 bytes.
+                    <p class="syntax">syntax to declare float and double:-</p>
+                    <code>
+                        float salary;
+                        double price;
+                    </code>
+                 </dd>
+                <dt>char</dt>
+                <dd>Keyword char is used for declaring character type variables. 
+                    The size of the character variable is 1 byte.
+                    <p class="syntax">Syntax to declare char:-</p>
+                    <code>char test = 'h';</code>
+                </dd>
+                </dl>
+            </div>
+        </section>
+        <section class="main-section" id="Control_Structures">
+            <header>Control Structures</header>
+            <div class="description">
+                <p>
+                    Control Structures are just a way to specify flow of control in programs. Any algorithm or program can be more clear and understood if they use self-contained modules called as logic or control structures. It basically analyzes and chooses in which direction a program flows based on certain parameters or conditions. There are three basic types of logic, or flow of control, known as:-
+                </p>
+                <ol>
+                <li>Sequence logic, or sequential flow(normal statements)</li>
+                <li>Selection logic, or conditional flow(if-else and switch-case)</li>
+                <li>Iteration logic, or repetitive flow(for-loops,while-loops and do-while loops)</li>
+                </ol>    
+            </div>
+        </section>
+        <section class="main-section" id="if_else">
+            <header >if else</header>
+            <div class="description">
+                <p>
+                    The If-else statement canbe used in vairous ways. One may use If exclusively to execute a line of code if a condition is met.Also, one may introduce a second component ie. else which causes  a second statement to be executed if the condition isn't met. Also a third component can be used too ie.esle if which allows one to introduce a secondary condition to be checked alongside a statement to be executed when it does so.
+                </p>
+                <p class="syntax">
+                    Simple if program (syntax):-
+                </p>
+                <code>
+                    if (condition) <br>
+                    {
+                        // block of code to be executed if the condition is true
+                      }
+                </code>
+                <p class="syntax">
+                Simple if-else program (syntax):-
+                </p>
+                <code>
+                    if (condition) <br>{
+                        // block of code to be executed if the condition is true
+                    }<br> 
+                      else<br> {
+                        // block of code to be executed if the condition is false
+                      }
+                </code>
+                <p class="syntax">
+                Simple  else if program (syntax):-
+                </p>    
+                <code>
+                    if (condition1) <br> {
+                        <br> // block of code to be executed if condition1 is true<br>
+                      }<br> else if (condition2) <br>{
+                        <br>// block of code to be executed if the condition1 is false and condition2 is true<br>
+                      } <br>else<br> {
+                        <br>// block of code to be executed if the condition1 is false and condition2 is false<br>
+                      }
+                </code>
+            </div>
+        </section>
+        <section class="main-section" id="For_Loop">
+            <header>For Loop</header>
+            <div class="description">
+                <p>
+                    In programming, a loop is used to repeat a block of code until the specified condition is met.C programming has three types of loops:
+                </p>
+                <UL><LI>For loop</LI><LI>While loop</LI><LI>Do while loop</LI></UL>
+                <p>
+                    We will talk about for loop.When the for loop is in use,The initialization statement is executed only once.
+                    Then, the test expression is evaluated. If the test expression is evaluated to false, the for loop is terminated.
+                    However, if the test expression is evaluated to true, statements inside the body of the for loop are executed, and the update expression is updated.
+                    Again the test expression is evaluated.
+                </p>
+                <p class="syntax">Syntax for "For loop" is:-<br></p>
+                <code>
+                    for (initializationStatement; testExpression; updateStatement)<br>
+                    {<br>
+                        // statements inside the body of loop<br>
+                    }<br>
+                </code>
+            </div>
+        </section>
+        <section class="main-section" id="Function">
+            <header>Function</header>
+            <div class="description">
+                <p>
+                    A function is a block of code which only runs when it is called.You can pass data, known as parameters, into a function.Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.
+                </p>
+                <p>
+                    There are predefined functions like main() function in c.We can define our own functions according to the needs too.
+                </p>
+                <p class="syntax">Syntax to Create Funcitons:-</p>
+                <code>
+                    void myFunction()<br>
+                     {<br>
+                        // code to be executed<br>
+                     }<br>
+                </code>    
+            </div>
+        </section>
+    </main> 
+</body>
+</html>
